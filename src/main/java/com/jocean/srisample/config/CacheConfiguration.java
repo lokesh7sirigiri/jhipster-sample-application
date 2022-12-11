@@ -51,6 +51,18 @@ public class CacheConfiguration {
             createCache(cm, com.jocean.srisample.domain.User.class.getName());
             createCache(cm, com.jocean.srisample.domain.Authority.class.getName());
             createCache(cm, com.jocean.srisample.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.jocean.srisample.domain.Region.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Country.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Location.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Department.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.jocean.srisample.domain.Task.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.jocean.srisample.domain.Employee.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.jocean.srisample.domain.Job.class.getName());
+            createCache(cm, com.jocean.srisample.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.jocean.srisample.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
